@@ -1,0 +1,84 @@
+body {
+    background-color: skyblue;
+}
+  
+p {
+    color: blue;
+    font-size: 13pt;
+}
+  
+h1 {
+    font-size: 26pt;
+}
+
+.image-container {
+    position: relative;
+    width: 395px;
+    height: 512px;
+}
+
+.base-spaghetti,
+.overlay-meatball {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay-meatball {
+    opacity: 0;
+    transition: opacity;
+}
+
+.overlay-meatball.visible {
+    opacity: 1;
+}
+
+#meatball-1-button,
+#meatball-2-button,
+#meatball-3-button,
+#meatball-4-button,
+#meatball-5-button {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#meatball-1-button {
+    top: 658px;
+    left: 36px;
+    width: 82px;
+    height: 82px;
+}
+
+#meatball-2-button {
+    top: 537px;
+    left: 150px;
+    width: 82px;
+    height: 82px;
+}
+
+#meatball-3-button {
+    top: 492px;
+    left: 168px;
+    width: 93px;
+    height: 93px;
+}
+
+#meatball-4-button {
+    top: 614px;
+    left: 254px;
+    width: 93px;
+    height: 93px;
+}
+
+#meatball-5-button {
+    top: 700px;
+    left: 329px;
+    width: 82px;
+    height: 82px;
+}
