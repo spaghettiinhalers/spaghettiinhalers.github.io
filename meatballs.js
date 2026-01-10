@@ -22,4 +22,16 @@ document.addEventListener('DOMContentLoaded', () => {
     meatball3Button.addEventListener('click', () => toggleMeatball(meatball3));
     meatball4Button.addEventListener('click', () => toggleMeatball(meatball4));
     meatball5Button.addEventListener('click', () => toggleMeatball(meatball5));
+
+    const dayNightButton = document.getElementById("day-night");
+
+    dayNightButton.addEventListener("click", function () {
+        document.body.classList.toggle("invert-colours");
+
+        if (document.body.classList.contains("invert-colours")) {
+            this.textContent = "☀︎";
+        } else {
+            this.textContent = "⏾";
+        }
+    });
 });

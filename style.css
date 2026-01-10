@@ -1,9 +1,20 @@
 body {
-    background-color: skyblue;
+    background-color: rgb(179, 221, 238);
+}
+
+body.invert-colours {
+    background-color: rgb(76, 34, 17);
+    filter: invert(1);
+}
+#day-night {
+    padding: 20px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 9999;
 }
   
-p {
-    color: blue;
+p, ul, ol {
+    color: rgb(0, 0, 212);
     font-size: 13pt;
 }
   
@@ -15,7 +26,65 @@ h1 {
     position: relative;
     width: 395px;
     height: 512px;
+    display: block;
 }
+
+.main-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+.main-left {
+    flex: 1;
+}
+.main-right {
+    position: relative;
+    display: inline-block;
+    line-height: 0;
+}
+
+
+
+.tab {
+    display: inline-block;
+    width: 70px;
+}
+.tabpuz {
+    display: inline-block;
+    width: 200px;
+}
+.tabfun {
+    display: inline-block;
+    width: 350px;
+}
+
+
+
+p a, li a {
+  color: black;
+}
+h1 a {
+  color: black;
+  text-decoration: none;
+}
+
+h1 a:visited,
+p a:visited,
+li a:visited {
+  color: black;
+}
+
+h1 a:hover,
+p a:hover,
+li a:hover,
+h1 a:active,
+p a:active,
+li a:active {
+  color: rgb(255, 0, 0);
+}
+
+
+
 
 .base-spaghetti,
 .overlay-meatball {
@@ -48,37 +117,9 @@ h1 {
     z-index: 10;
 }
 
-#meatball-1-button {
-    top: 658px;
-    left: 36px;
-    width: 82px;
-    height: 82px;
-}
 
-#meatball-2-button {
-    top: 537px;
-    left: 150px;
-    width: 82px;
-    height: 82px;
-}
-
-#meatball-3-button {
-    top: 492px;
-    left: 168px;
-    width: 93px;
-    height: 93px;
-}
-
-#meatball-4-button {
-    top: 614px;
-    left: 254px;
-    width: 93px;
-    height: 93px;
-}
-
-#meatball-5-button {
-    top: 700px;
-    left: 329px;
-    width: 82px;
-    height: 82px;
-}
+#meatball-1-button { position: absolute; top: 335px; left: 33px; width: 82px; height: 82px; }
+#meatball-2-button { position: absolute; top: 165px; left: 160px; width: 82px; height: 82px; }
+#meatball-3-button { position: absolute; top: 215px; left: 142px; width: 93px; height: 93px; }
+#meatball-4-button { position: absolute; top: 293px; left: 248px; width: 93px; height: 93px; }
+#meatball-5-button { position: absolute; top: 380px; left: 320px; width: 82px; height: 82px; }
